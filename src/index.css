@@ -2,41 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* AppleDroidGV Design System - Optimized for conversion and trust */
 
 @layer base {
   :root {
+    /* Core brand colors - AppleDroidGV */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 217 19% 12%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 217 19% 12%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --popover-foreground: 217 19% 12%;
+    
+    /* Primary - Deep Corporate Blue */
+    --primary: 222 83% 23%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 222 83% 18%;
+    
+    /* Secondary - Light backgrounds */
+    --secondary: 210 20% 98%;
+    --secondary-foreground: 217 19% 27%;
+    
+    /* Accent - Action Blue for CTAs */
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 221 83% 48%;
+    
+    /* Muted for subtle elements */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 14% 47%;
+    
+    /* Trust indicators */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 98%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+    
+    --radius: 0.75rem;
+    
+    /* WhatsApp green for messaging CTAs */
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 0 0% 98%;
+    --whatsapp-hover: 142 70% 44%;
+    
+    /* Gradients for hero sections */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--secondary)));
+    
+    /* Shadows for depth */
+    --shadow-elegant: 0 10px 25px -5px hsl(var(--primary) / 0.1);
+    --shadow-card: 0 4px 6px -1px hsl(var(--primary) / 0.1);
+    --shadow-cta: 0 8px 16px -4px hsl(var(--accent) / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease;
 
     --sidebar-background: 0 0% 98%;
 
