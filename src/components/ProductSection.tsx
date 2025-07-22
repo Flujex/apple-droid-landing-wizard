@@ -62,8 +62,8 @@ const ProductSection = () => {
                     alt={product.name}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 right-4 bg-success text-success-foreground px-2 py-1 rounded-full text-xs font-medium">
-                    Original
+                  <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-medium shadow-green">
+                    ✓ Original
                   </div>
                 </div>
 

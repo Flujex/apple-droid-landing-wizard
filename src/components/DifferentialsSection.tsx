@@ -55,7 +55,7 @@ const DifferentialsSection = () => {
             <Card key={index} className="group hover:shadow-card transition-all duration-300 hover:scale-105 bg-gradient-card">
               <CardContent className="p-8 text-center">
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-orange rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-orange">
                     <differential.icon className="w-8 h-8 text-primary-foreground" />
                   </div>
                 </div>
@@ -74,8 +74,8 @@ const DifferentialsSection = () => {
 
         {/* Trust Badge */}
         <div className="text-center mt-16">
-          <div className="inline-flex items-center space-x-4 bg-background rounded-xl px-8 py-4 shadow-card">
-            <Shield className="w-8 h-8 text-success" />
+          <div className="inline-flex items-center space-x-4 bg-background rounded-xl px-8 py-4 shadow-green border border-accent/20">
+            <Shield className="w-8 h-8 text-accent animate-pulse-green" />
             <div className="text-left">
               <p className="font-bold text-primary">Garantia Oficial Apple</p>
               <p className="text-sm text-muted-foreground">Suporte autorizado e peças originais</p>

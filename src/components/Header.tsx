@@ -13,7 +13,7 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center space-x-3">
           <img 
-            src="/lovable-uploads/c371f504-f585-4894-aa11-04ce0edc1293.png" 
+            src="/lovable-uploads/0e9a780c-0553-46b8-b1e4-432965c672d8.png" 
             alt="AppleDroidGV Logo" 
             className="w-10 h-10 object-contain"
           />

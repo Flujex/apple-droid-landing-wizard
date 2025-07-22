@@ -2,64 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* AppleDroidGV Design System - Optimized for conversion and trust */
+/* AppleDroidGV Design System - Orange & Green Branding */
 
 @layer base {
   :root {
-    /* Core brand colors - AppleDroidGV */
+    /* Core brand colors - AppleDroidGV Orange & Green */
     --background: 0 0% 100%;
-    --foreground: 217 19% 12%;
+    --foreground: 20 14% 12%;
     
     --card: 0 0% 100%;
-    --card-foreground: 217 19% 12%;
+    --card-foreground: 20 14% 12%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 217 19% 12%;
+    --popover-foreground: 20 14% 12%;
     
-    /* Primary - Deep Corporate Blue */
-    --primary: 222 83% 23%;
-    --primary-foreground: 0 0% 98%;
-    --primary-hover: 222 83% 18%;
+    /* Primary - Vibrant Orange from logo */
+    --primary: 20 95% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 20 95% 52%;
     
-    /* Secondary - Light backgrounds */
-    --secondary: 210 20% 98%;
-    --secondary-foreground: 217 19% 27%;
+    /* Secondary - Light orange tones */
+    --secondary: 20 40% 96%;
+    --secondary-foreground: 20 30% 25%;
     
-    /* Accent - Action Blue for CTAs */
-    --accent: 221 83% 53%;
-    --accent-foreground: 0 0% 98%;
-    --accent-hover: 221 83% 48%;
+    /* Accent - Fresh Green from logo */
+    --accent: 91 45% 58%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 91 45% 52%;
     
     /* Muted for subtle elements */
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 14% 47%;
+    --muted: 20 20% 95%;
+    --muted-foreground: 20 10% 45%;
     
-    /* Trust indicators */
-    --success: 142 71% 45%;
-    --success-foreground: 0 0% 98%;
+    /* Success - Using the green from logo */
+    --success: 91 45% 58%;
+    --success-foreground: 0 0% 100%;
     
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-    
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 221 83% 53%;
-    
-    --radius: 0.75rem;
-    
-    /* WhatsApp green for messaging CTAs */
+    /* WhatsApp - Classic WhatsApp green */
     --whatsapp: 142 70% 49%;
     --whatsapp-foreground: 0 0% 98%;
     --whatsapp-hover: 142 70% 44%;
     
-    /* Gradients for hero sections */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 20 30% 88%;
+    --input: 20 30% 88%;
+    --ring: 20 95% 58%;
+    
+    --radius: 0.75rem;
+    
+    /* Gradients using brand colors */
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-orange: linear-gradient(135deg, hsl(var(--primary)), hsl(20 90% 65%));
+    --gradient-green: linear-gradient(135deg, hsl(var(--accent)), hsl(91 40% 65%));
     --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--secondary)));
     
-    /* Shadows for depth */
-    --shadow-elegant: 0 10px 25px -5px hsl(var(--primary) / 0.1);
-    --shadow-card: 0 4px 6px -1px hsl(var(--primary) / 0.1);
-    --shadow-cta: 0 8px 16px -4px hsl(var(--accent) / 0.3);
+    /* Enhanced shadows with brand colors */
+    --shadow-elegant: 0 20px 40px -10px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 8px 16px -4px hsl(var(--primary) / 0.1);
+    --shadow-cta: 0 12px 24px -6px hsl(var(--accent) / 0.25);
+    --shadow-orange: 0 8px 25px -5px hsl(var(--primary) / 0.3);
+    --shadow-green: 0 8px 25px -5px hsl(var(--accent) / 0.3);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

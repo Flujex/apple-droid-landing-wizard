@@ -24,7 +24,7 @@ const FinalCTASection = () => {
               variant="hero" 
               size="xl" 
               asChild
-              className="bg-whatsapp text-whatsapp-foreground hover:bg-whatsapp-hover animate-bounce-gentle"
+              className="bg-whatsapp text-whatsapp-foreground hover:bg-whatsapp-hover animate-bounce-gentle shadow-green"
             >
               <a href={whatsappFinal} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-6 h-6" />
