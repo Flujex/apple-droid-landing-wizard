@@ -11,10 +11,12 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-card">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">AD</span>
-          </div>
+        <div className="flex items-center space-x-3">
+          <img 
+            src="/lovable-uploads/c371f504-f585-4894-aa11-04ce0edc1293.png" 
+            alt="AppleDroidGV Logo" 
+            className="w-10 h-10 object-contain"
+          />
           <div>
             <h1 className="text-xl font-bold text-primary">AppleDroidGV</h1>
             <p className="text-xs text-muted-foreground hidden sm:block">12 anos de confiança</p>
