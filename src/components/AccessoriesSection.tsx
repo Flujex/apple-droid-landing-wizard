@@ -1,67 +1,86 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MessageCircle } from 'lucide-react';
+import { useWhatsApp } from '@/hooks/useWhatsApp';
 import magsafeCharger from '@/assets/magsafe-charger.jpg';
 
+interface Accessory {
+  id: number;
+  name: string;
+  price: string;
+  image: string;
+  description: string;
+  alt: string;
+}
+
 const AccessoriesSection = () => {
-  const accessories = [
+  const { links, generateWhatsAppLink } = useWhatsApp();
+
+  const accessories: Accessory[] = [
     {
       id: 1,
       name: "Cabo Lightning/USB-C",
       price: "A partir de R$ 89",
       image: "/placeholder.svg",
-      description: "Cabos originais Apple para carregamento e sincronização"
+      description: "Cabos originais Apple para carregamento e sincronização",
+      alt: "Cabo Lightning e USB-C originais Apple"
     },
     {
       id: 2,
       name: "Carregador MagSafe",
       price: "R$ 349",
       image: magsafeCharger,
-      description: "Carregamento sem fio rápido e seguro"
+      description: "Carregamento sem fio rápido e seguro",
+      alt: "Carregador MagSafe sem fio da Apple"
     },
     {
       id: 3,
       name: "EarPods",
       price: "R$ 189",
       image: "/placeholder.svg", 
-      description: "Fones de ouvido originais Apple com qualidade premium"
+      description: "Fones de ouvido originais Apple com qualidade premium",
+      alt: "EarPods fones de ouvido originais Apple"
     },
     {
       id: 4,
       name: "Power Bank MFi",
       price: "A partir de R$ 199",
       image: "/placeholder.svg",
-      description: "Carregadores portáteis certificados MFi"
+      description: "Carregadores portáteis certificados MFi",
+      alt: "Power Bank certificado MFi para iPhone"
     }
   ];
 
-  const whatsappAccessories = "https://wa.me/5533999887766?text=Olá! Gostaria de saber mais sobre os acessórios Apple disponíveis na loja.";
-
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section className="section-padding bg-background">
+      <div className="container mx-auto container-spacing">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <header className="text-center mb-16">
+          <h2 className="text-primary mb-4">
             Acessórios Originais Apple
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Complete sua experiência Apple com acessórios originais. 
             Garantia e qualidade que você já conhece.
           </p>
-        </div>
+        </header>
 
         {/* Accessories Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" role="list">
           {accessories.map((accessory) => (
-            <Card key={accessory.id} className="group hover:shadow-card transition-all duration-300 hover:scale-105">
+            <Card 
+              key={accessory.id} 
+              className="group hover:shadow-card transition-all duration-300 hover:scale-105"
+              role="listitem"
+            >
               <CardContent className="p-6 text-center">
                 {/* Accessory Image */}
                 <div className="mb-4 overflow-hidden rounded-lg">
                   <img 
                     src={accessory.image} 
-                    alt={accessory.name}
+                    alt={accessory.alt}
                     className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </div>
 
@@ -82,15 +101,16 @@ const AccessoriesSection = () => {
                   <Button 
                     variant="outline" 
                     size="sm" 
-                    className="w-full"
+                    className="w-full gap-2"
                     asChild
                   >
                     <a 
-                      href={`${whatsappAccessories}&text=Tenho interesse no ${accessory.name}.`}
+                      href={generateWhatsAppLink(`Olá! Tenho interesse no ${accessory.name}. Podem me passar mais informações?`)}
                       target="_blank" 
                       rel="noopener noreferrer"
+                      aria-label={`Consultar preços e disponibilidade do ${accessory.name}`}
                     >
-                      <MessageCircle className="w-4 h-4" />
+                      <MessageCircle className="w-4 h-4" aria-hidden="true" />
                       Consultar
                     </a>
                   </Button>
@@ -101,13 +121,18 @@ const AccessoriesSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <footer className="text-center mt-12">
           <Button variant="cta" size="lg" asChild>
-            <a href={whatsappAccessories} target="_blank" rel="noopener noreferrer">
+            <a 
+              href={links.accessories} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Ver todos os acessórios Apple disponíveis"
+            >
               Ver Todos os Acessórios
             </a>
           </Button>
-        </div>
+        </footer>
       </div>
     </section>
   );

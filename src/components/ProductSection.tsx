@@ -1,12 +1,25 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MessageCircle } from 'lucide-react';
+import { useWhatsApp } from '@/hooks/useWhatsApp';
 import iphone16ProMax from '@/assets/iphone-16-pro-max.jpg';
 import iphone16Pro from '@/assets/iphone-16-pro.jpg';
 import iphone16 from '@/assets/iphone-16.jpg';
 
+interface Product {
+  id: number;
+  name: string;
+  model: string;
+  description: string;
+  price: string;
+  image: string;
+  whatsappMessage: string;
+}
+
 const ProductSection = () => {
-  const products = [
+  const { generateWhatsAppLink, links } = useWhatsApp();
+
+  const products: Product[] = [
     {
       id: 1,
       name: "iPhone 16 Pro Max",
@@ -37,30 +50,35 @@ const ProductSection = () => {
   ];
 
   return (
-    <section id="produtos" className="py-20 bg-secondary">
-      <div className="container mx-auto px-4">
+    <section id="produtos" className="section-padding bg-secondary">
+      <div className="container mx-auto container-spacing">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <header className="text-center mb-16">
+          <h2 className="text-primary mb-4">
             iPhones Originais com Garantia Apple
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Todos os nossos iPhones são 100% originais, lacrados de fábrica e com garantia oficial Apple. 
             Parcelamento em até 10x sem juros.
           </p>
-        </div>
+        </header>
 
         {/* Products Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
           {products.map((product) => (
-            <Card key={product.id} className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-gradient-card">
+            <Card 
+              key={product.id} 
+              className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-gradient-card"
+              role="listitem"
+            >
               <CardContent className="p-6">
                 {/* Product Image */}
                 <div className="relative mb-6 overflow-hidden rounded-xl">
                   <img 
                     src={product.image} 
-                    alt={product.name}
+                    alt={`${product.name} ${product.model} - iPhone original na AppleDroidGV`}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
                   />
                   <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-medium shadow-green">
                     ✓ Original
@@ -69,14 +87,14 @@ const ProductSection = () => {
 
                 {/* Product Info */}
                 <div className="space-y-4">
-                  <div>
+                  <header>
                     <h3 className="text-xl font-bold text-primary">
                       {product.name}
                     </h3>
                     <p className="text-muted-foreground font-medium">
                       {product.model}
                     </p>
-                  </div>
+                  </header>
 
                   <p className="text-foreground">
                     {product.description}
@@ -93,15 +111,16 @@ const ProductSection = () => {
 
                   <Button 
                     variant="whatsapp" 
-                    className="w-full"
+                    className="w-full gap-2"
                     asChild
                   >
                     <a 
-                      href={`https://wa.me/5533999887766?text=${encodeURIComponent(product.whatsappMessage)}`}
+                      href={generateWhatsAppLink(product.whatsappMessage)}
                       target="_blank" 
                       rel="noopener noreferrer"
+                      aria-label={`Comprar ${product.name} ${product.model} pelo WhatsApp`}
                     >
-                      <MessageCircle className="w-4 h-4" />
+                      <MessageCircle className="w-4 h-4" aria-hidden="true" />
                       Comprar no WhatsApp
                     </a>
                   </Button>
@@ -112,20 +131,21 @@ const ProductSection = () => {
         </div>
 
         {/* Additional Info */}
-        <div className="text-center mt-12">
+        <footer className="text-center mt-12">
           <p className="text-muted-foreground mb-4">
             Não encontrou o modelo que procura? Temos outros modelos disponíveis!
           </p>
           <Button variant="cta" size="lg" asChild>
             <a 
-              href="https://wa.me/5533999887766?text=Olá! Gostaria de ver outros modelos de iPhone disponíveis na loja."
+              href={links.pricing}
               target="_blank" 
               rel="noopener noreferrer"
+              aria-label="Ver todos os modelos de iPhone disponíveis"
             >
               Ver Todos os Modelos
             </a>
           </Button>
-        </div>
+        </footer>
       </div>
     </section>
   );

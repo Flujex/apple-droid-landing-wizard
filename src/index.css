@@ -126,11 +126,40 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
   }
+
+  /* Remove global border application - apply only where needed */
+  button, input, textarea, select {
+    @apply border-border;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Smooth transitions for interactive elements */
+  a, button {
+    @apply transition-colors duration-200;
+  }
+
+  /* Typography scale for consistency */
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight; }
+  h2 { @apply text-2xl md:text-3xl lg:text-4xl font-bold leading-tight; }
+  h3 { @apply text-xl md:text-2xl font-semibold leading-tight; }
+  h4 { @apply text-lg md:text-xl font-semibold leading-tight; }
+  h5 { @apply text-base md:text-lg font-medium leading-tight; }
+  h6 { @apply text-sm md:text-base font-medium leading-tight; }
+
+  /* Spacing utilities for consistent layout */
+  .section-padding { @apply py-16 md:py-20 lg:py-24; }
+  .container-spacing { @apply px-4 md:px-6 lg:px-8; }
 }
