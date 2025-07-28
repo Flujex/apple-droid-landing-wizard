@@ -57,11 +57,11 @@ const AccessoriesSection = () => {
         {/* Section Header */}
         <header className="text-center mb-16">
           <h2 className="text-primary mb-4">
-            Acessórios Originais Apple
+            Acessórios de Performance
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Complete sua experiência Apple com acessórios originais. 
-            Garantia e qualidade que você já conhece.
+            Maximize o potencial dos seus dispositivos com acessórios que nossos especialistas recomendam. 
+            Cada produto é testado e aprovado para garantir performance e durabilidade excepcionais.
           </p>
         </header>
 
@@ -111,7 +111,7 @@ const AccessoriesSection = () => {
                       aria-label={`Consultar preços e disponibilidade do ${accessory.name}`}
                     >
                       <MessageCircle className="w-4 h-4" aria-hidden="true" />
-                      Consultar
+                      Consultar Especialista
                     </a>
                   </Button>
                 </div>

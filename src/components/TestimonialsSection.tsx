@@ -8,15 +8,15 @@ const TestimonialsSection = () => {
       name: "Maria S.",
       location: "Centro, GV",
       rating: 5,
-      text: "Comprei meu iPhone 16 na AppleDroidGV e o atendimento foi excepcional. Produto original, entrega rápida e preço justo. Recomendo!",
-      purchase: "iPhone 16 Pro Max"
+      text: "Meu iPhone parou de funcionar no meio de uma reunião importante. Pensei que tinha perdido tudo. Na AppleDroidGV, fizeram um diagnóstico transparente e recuperaram todos os meus dados em 2 horas. Salvaram minha semana!",
+      purchase: "Diagnóstico e Reparo - iPhone 16 Pro Max"
     },
     {
       id: 2,
       name: "João P.",
       location: "Vila Bretas, GV",
       rating: 5,
-      text: "12 anos no mercado faz diferença! Confiança total. Já comprei 3 iPhones lá e sempre fui bem atendido. Pessoal super profissional.",
+      text: "Estava com medo de comprar um iPhone e não ter suporte. Aqui encontrei não só o produto original, mas um especialista que me ensinou tudo e sempre responde minhas dúvidas. Confiança total!",
       purchase: "iPhone 15 Pro"
     },
     {
@@ -24,16 +24,16 @@ const TestimonialsSection = () => {
       name: "Ana Carolina M.",
       location: "Lourdes, GV",
       rating: 5,
-      text: "Melhor loja de iPhone em Governador Valadares! Parcelaram meu iPhone sem juros e ainda ganhei uma capinha de brinde. Top!",
-      purchase: "iPhone 16"
+      text: "Cansei de ser enganada em outras lojas. Aqui o preço é o que combinamos, sem pegadinhas. O trabalho é feito na minha frente e explica tudo. Finalmente encontrei quem entende do que fala.",
+      purchase: "iPhone 16 + Diagnóstico"
     },
     {
       id: 4,
       name: "Carlos E.",
       location: "Caravelas, GV",
       rating: 5,
-      text: "Suporte pós-venda nota 10! Tive um problema com meu iPhone e eles resolveram rapidinho. É isso que diferencia uma loja boa!",
-      purchase: "iPhone 15"
+      text: "Meu iPhone tinha um defeito estranho que ninguém conseguia resolver. Os especialistas da AppleDroidGV identificaram o problema em minutos e me deram a solução mais econômica. Profissionalismo de verdade!",
+      purchase: "iPhone 15 - Diagnóstico Técnico"
     }
   ];
 

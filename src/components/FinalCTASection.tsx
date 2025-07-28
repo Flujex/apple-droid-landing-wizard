@@ -18,12 +18,12 @@ const FinalCTASection = () => {
           {/* Main CTA Text */}
           <header className="mb-12">
             <h2 className="text-primary-foreground mb-6">
-              Pronto para ter seu iPhone original?
+              Recupere sua tranquilidade digital agora
             </h2>
             
             <p className="text-xl md:text-2xl text-primary-foreground/90">
-              Fale conosco agora pelo WhatsApp e tire todas as dúvidas. 
-              Nossa equipe está pronta para te atender!
+              Chega de estresse com tecnologia. Nossos especialistas estão prontos para 
+              devolver sua paz de espírito com a segurança e transparência que você merece.
             </p>
           </header>
 
@@ -42,7 +42,7 @@ const FinalCTASection = () => {
                 aria-label="Chamar no WhatsApp da AppleDroidGV para comprar iPhone"
               >
                 <MessageCircle className="w-6 h-6" aria-hidden="true" />
-                Chamar no WhatsApp
+                Recuperar Minha Tranquilidade
               </a>
             </Button>
             

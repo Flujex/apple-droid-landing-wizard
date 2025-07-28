@@ -22,15 +22,15 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center text-primary-foreground">
           {/* Main Title */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            AppleDroidGV
+            <span className="block text-primary-foreground">Seu dispositivo é essencial.</span>
             <span className="block text-2xl md:text-3xl font-normal mt-2 text-primary-foreground/90">
-              12 anos de confiança em Governador Valadares
+              Não o entregue a um curioso.
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/80 animate-fade-in">
-            iPhones originais com garantia local, atendimento próximo e parcelamento facilitado
+            Confie em quem é especialista. Há 12 anos, a segurança que você procura no coração de Governador Valadares.
           </p>
 
           {/* CTAs */}
@@ -42,7 +42,7 @@ const HeroSection = () => {
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
             >
               <a href={whatsappChooseIphone} target="_blank" rel="noopener noreferrer">
-                Escolher meu iPhone
+                Agendar Diagnóstico Sem Custo
               </a>
             </Button>
             <Button 
@@ -60,9 +60,9 @@ const HeroSection = () => {
           {/* Social Proof */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 animate-fade-in">
             <div className="flex items-center space-x-2">
-              <Users className="w-6 h-6 text-primary-foreground/80" />
+              <Shield className="w-6 h-6 text-primary-foreground/80" />
               <span className="text-primary-foreground/80">
-                Mais de 5.000 clientes satisfeitos
+                Especialistas Certificados
               </span>
             </div>
             

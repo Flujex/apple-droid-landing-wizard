@@ -8,36 +8,28 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Os iPhones são originais?",
-      answer: "Sim! Todos os nossos iPhones são 100% originais, lacrados de fábrica e com garantia oficial Apple. Trabalhamos apenas com produtos importados através de canais autorizados."
+      question: "Como sei que as peças são de qualidade e não serei enganado?",
+      answer: "Entendemos sua preocupação. Trabalhamos apenas com peças originais Apple e fornecedores certificados. Fazemos o diagnóstico na sua frente, explicamos cada detalhe e o preço combinado é o que você paga. Nossa reputação de 12 anos é nossa maior garantia."
     },
     {
-      question: "Qual a garantia dos produtos?",
-      answer: "Todos os iPhones têm garantia oficial Apple de 1 ano. Além disso, oferecemos suporte pós-venda em nossa loja física em Governador Valadares para qualquer dúvida ou problema."
+      question: "E se o problema for mais grave do que parece?",
+      answer: "Nosso diagnóstico é completo e transparente. Se descobrirmos algo além do inicial, paramos tudo e explicamos as opções. Você decide se quer prosseguir. Nunca fazemos nada sem sua autorização expressa."
     },
     {
-      question: "Como funciona o parcelamento?",
-      answer: "Aceitamos cartão de crédito em até 10x sem juros. Também trabalhamos com PIX à vista com 5% de desconto. Consulte condições especiais para outros meios de pagamento."
+      question: "Vocês realmente entendem de iPhone ou é só conversa?",
+      answer: "Somos especialistas certificados há 12 anos. Nossa equipe passa por treinamento constante e temos as ferramentas originais Apple. Pode nos testar: traga sua dúvida mais complexa e veja a diferença da experiência."
     },
     {
-      question: "Fazem entrega em Governador Valadares?",
-      answer: "Sim! Fazemos entrega rápida em toda Governador Valadares e região. Você também pode retirar pessoalmente em nossa loja física. Frete grátis para compras acima de R$ 500."
+      question: "Qual a diferença de vocês para a concorrência?",
+      answer: "Simples: transparência total, diagnóstico sem taxa, preço justo combinado e 12 anos de reputação sólida. Não somos apenas uma loja, somos o estúdio de confiança da Galeria 616."
     },
     {
-      question: "Posso trocar se não me adaptar?",
-      answer: "Oferecemos 7 dias para arrependimento conforme o Código de Defesa do Consumidor. O produto deve estar em perfeitas condições, com embalagem original e acessórios."
+      question: "E se eu não ficar satisfeito com o serviço?",
+      answer: "Nosso compromisso é com sua satisfação total. Se algo não estiver perfeito, voltamos à mesa e ajustamos até você ficar 100% satisfeito. Nosso relacionamento não termina quando você paga."
     },
     {
-      question: "Onde fica a loja física?",
-      answer: "Nossa loja está localizada no centro de Governador Valadares, MG. Funcionamos de segunda a sexta das 8h às 18h e sábados das 8h às 16h. Entre em contato pelo WhatsApp para o endereço exato."
-    },
-    {
-      question: "Vocês fazem upgrade/troca de aparelho usado?",
-      answer: "Sim! Avaliamos seu iPhone usado e oferecemos desconto na compra de um modelo mais novo. Entre em contato pelo WhatsApp com o modelo do seu aparelho atual para uma avaliação."
-    },
-    {
-      question: "Têm assistência técnica?",
-      answer: "Oferecemos suporte pós-venda e orientações. Para reparos em garantia, direcionamos para assistência técnica autorizada Apple. Problemas simples resolvemos na hora."
+      question: "Por que deveria confiar em vocês ao invés de ir direto na Apple?",
+      answer: "Oferecemos o mesmo padrão técnico com atendimento humano e local. Você nos conhece pessoalmente, tem acesso direto e resolve tudo sem burocracias. Somos a Apple com o carinho de Governador Valadares."
     }
   ];
 

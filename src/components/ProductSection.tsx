@@ -55,11 +55,11 @@ const ProductSection = () => {
         {/* Section Header */}
         <header className="text-center mb-16">
           <h2 className="text-primary mb-4">
-            iPhones Originais com Garantia Apple
+            Estúdio de Performance Apple
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Todos os nossos iPhones são 100% originais, lacrados de fábrica e com garantia oficial Apple. 
-            Parcelamento em até 10x sem juros.
+            Dispositivos originais com diagnóstico de performance incluído. 
+            Nossa expertise garante que você leve não apenas um produto, mas a tranquilidade de estar protegido.
           </p>
         </header>
 
@@ -121,7 +121,7 @@ const ProductSection = () => {
                       aria-label={`Comprar ${product.name} ${product.model} pelo WhatsApp`}
                     >
                       <MessageCircle className="w-4 h-4" aria-hidden="true" />
-                      Comprar no WhatsApp
+                      Falar com Especialista
                     </a>
                   </Button>
                 </div>

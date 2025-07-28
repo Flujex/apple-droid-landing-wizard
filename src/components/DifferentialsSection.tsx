@@ -11,33 +11,33 @@ const DifferentialsSection = () => {
   const differentials: Differential[] = [
     {
       icon: Award,
-      title: "12 anos de credibilidade",
-      description: "Empresa consolidada em Governador Valadares"
+      title: "12 anos de maestria",
+      description: "Experiência que faz a diferença na hora que você mais precisa"
     },
     {
       icon: Shield,
-      title: "100% originais",
-      description: "Produtos com garantia Apple oficial"
+      title: "Diagnóstico 100% transparente",
+      description: "Chega de 'taxa de análise' e orçamentos obscuros. Você entende exatamente o que precisa ser feito"
     },
     {
       icon: Heart,
-      title: "Atendimento humano",
-      description: "Suporte local especializado"
+      title: "Entendemos a sua urgência",
+      description: "Sabemos que não é só um aparelho quebrado, é sua conexão com o mundo"
     },
     {
       icon: CreditCard,
-      title: "Parcelamento facilitado",
-      description: "Até 10x sem juros no cartão"
+      title: "Componente principal: confiança",
+      description: "Preço justo combinado, sem surpresas na conta final"
     },
     {
       icon: MapPin,
-      title: "Entrega rápida",
-      description: "Retirada na loja em Governador Valadares"
+      title: "Estúdio na Galeria 616",
+      description: "Localização física que transmite segurança e facilita sua vida"
     },
     {
       icon: Phone,
-      title: "Suporte pós-venda",
-      description: "Você nunca fica sozinho"
+      title: "Suporte que não te abandona",
+      description: "Nosso relacionamento não acaba quando você paga. Garantimos sua satisfação total"
     }
   ];
 
@@ -47,11 +47,11 @@ const DifferentialsSection = () => {
         {/* Section Header */}
         <header className="text-center mb-16">
           <h2 className="text-primary mb-4">
-            Por que escolher a AppleDroidGV?
+            O Especialista de Confiança da Galeria
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Somos mais que uma loja de tecnologia. Somos uma empresa local, 
-            que entende suas necessidades e oferece a melhor experiência em produtos Apple.
+            Entendemos suas dores e oferecemos a solução que você realmente precisa: 
+            transparência total, expertise certificada e a tranquilidade de estar em boas mãos.
           </p>
         </header>
 
@@ -94,8 +94,8 @@ const DifferentialsSection = () => {
               aria-hidden="true"
             />
             <div className="text-left">
-              <p className="font-bold text-primary">Garantia Oficial Apple</p>
-              <p className="text-sm text-muted-foreground">Suporte autorizado e peças originais</p>
+              <p className="font-bold text-primary">Especialistas Certificados</p>
+              <p className="text-sm text-muted-foreground">Maestria técnica e transparência total</p>
             </div>
           </div>
         </footer>
