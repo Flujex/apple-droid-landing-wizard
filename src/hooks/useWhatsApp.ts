@@ -4,7 +4,7 @@
  * @returns Função para gerar links do WhatsApp
  */
 export const useWhatsApp = (baseMessage?: string) => {
-  const WHATSAPP_NUMBER = '5533999887766';
+  const WHATSAPP_NUMBER = '5533987094020';
   const DEFAULT_MESSAGE = baseMessage || 'Olá! Vi o site da AppleDroidGV e gostaria de mais informações.';
 
   const generateWhatsAppLink = (customMessage?: string) => {

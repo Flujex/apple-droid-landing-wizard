@@ -8,7 +8,7 @@ const Footer = () => {
     <footer id="contato" className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 sm:gap-12 mb-12">
           
           {/* Contact Info */}
           <div>
@@ -19,7 +19,7 @@ const Footer = () => {
                 <div>
                   <p className="font-medium">Estúdio AppleDroidGV</p>
                   <p className="text-primary-foreground/80 text-sm">
-                    Galeria 616, Loja 612C<br />
+                    Rua São Paulo, Galeria 616, Loja 612C<br />
                     Centro, Governador Valadares - MG
                   </p>
                 </div>
@@ -28,7 +28,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-foreground/80" />
                 <div>
-                  <p className="font-medium">(33) 99988-7766</p>
+                  <p className="font-medium">(33) 98709-4020</p>
                   <p className="text-primary-foreground/80 text-sm">WhatsApp e ligações</p>
                 </div>
               </div>
@@ -115,17 +115,20 @@ const Footer = () => {
               
               <div className="space-y-2">
                 <p className="text-sm">
-                  <span className="font-medium">CNPJ:</span> 12.345.678/0001-90
+                  <span className="font-medium">CNPJ:</span> 17.673.803/0001-00
                 </p>
                 <p className="text-sm">
-                  <span className="font-medium">Razão Social:</span> AppleDroidGV Ltda.
+                  <span className="font-medium">Razão Social:</span> Daniel Santiago De Carvalho Gomes
+                </p>
+                <p className="text-sm">
+                  <span className="font-medium">Endereço:</span> Rua São Paulo, Galeria 616, Loja 612C - Centro, Governador Valadares - MG
                 </p>
               </div>
 
               <div className="pt-4">
                 <Button variant="whatsapp" size="lg" asChild className="w-full">
                   <a 
-                    href="https://wa.me/5533999887766?text=Olá! Quero falar com a AppleDroidGV."
+                    href="https://wa.me/5533987094020?text=Olá! Quero falar com a AppleDroidGV."
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

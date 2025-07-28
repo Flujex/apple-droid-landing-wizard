@@ -46,7 +46,7 @@ const DifferentialsSection = () => {
         </header>
 
         {/* Differentials Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8" role="list">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8" role="list">
           {differentials.map((differential, index) => (
             <Card 
               key={index} 

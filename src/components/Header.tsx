@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-card">
-        <div className="container mx-auto container-spacing h-16 flex items-center justify-between">
+        <div className="container mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
@@ -102,7 +102,7 @@ const Header = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden"
+              className="md:hidden z-50 relative"
               onClick={handleMenuToggle}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
@@ -128,7 +128,7 @@ const Header = () => {
           role="navigation"
           aria-label="Menu mobile"
         >
-          <nav className="container mx-auto container-spacing py-4 space-y-4">
+          <nav className="container mx-auto px-4 sm:px-6 py-4 space-y-4">
             {navigationItems.map((item) => (
               <a 
                 key={item.href}

@@ -28,7 +28,7 @@ const FinalCTASection = () => {
           </header>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 px-4 sm:px-0">
             <Button 
               variant="hero" 
               size="xl" 
@@ -57,13 +57,13 @@ const FinalCTASection = () => {
                 aria-label={`Ligar para AppleDroidGV no número ${phoneNumber}`}
               >
                 <Phone className="w-6 h-6" aria-hidden="true" />
-                (33) 99988-7766
+                (33) 98709-4020
               </a>
             </Button>
           </div>
 
           {/* Trust Elements */}
-          <div className="grid sm:grid-cols-3 gap-8 text-center" role="list">
+          <div className="grid sm:grid-cols-3 gap-6 sm:gap-8 text-center px-4 sm:px-0" role="list">
             {trustMetrics.map((metric, index) => (
               <div key={index} role="listitem">
                 <p className="text-2xl font-bold mb-2" aria-label={`${metric.value} ${metric.label}`}>

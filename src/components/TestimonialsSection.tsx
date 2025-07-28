@@ -41,8 +41,8 @@ const TestimonialsSection = () => {
     <section id="depoimentos" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <div className="text-center mb-12 sm:mb-16 px-4 sm:px-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
             A Experiência de Quem Já Confiou na Gente
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -52,7 +52,7 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           {testimonials.map((testimonial) => (
             <Card key={testimonial.id} className="hover:shadow-card transition-all duration-300 hover:scale-105">
               <CardContent className="p-8">

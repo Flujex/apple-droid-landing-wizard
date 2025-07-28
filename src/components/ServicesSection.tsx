@@ -51,7 +51,7 @@ const ServicesSection = () => {
         </header>
 
         {/* Services Grid */}
-        <div className="grid lg:grid-cols-3 gap-8" role="list">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list">
           {services.map((service, index) => (
             <Card 
               key={index} 

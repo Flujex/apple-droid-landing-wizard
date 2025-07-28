@@ -37,8 +37,8 @@ const FAQSection = () => {
     <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <div className="text-center mb-12 sm:mb-16 px-4 sm:px-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
             Dúvidas Frequentes
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -56,10 +56,10 @@ const FAQSection = () => {
                 value={`item-${index}`}
                 className="bg-background rounded-xl border shadow-card hover:shadow-elegant transition-shadow duration-300"
               >
-                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                <AccordionTrigger className="px-4 sm:px-6 py-4 text-left hover:no-underline">
                   <span className="font-semibold text-primary">{faq.question}</span>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4">
+                <AccordionContent className="px-4 sm:px-6 pb-4">
                   <p className="text-foreground leading-relaxed">
                     {faq.answer}
                   </p>
@@ -76,7 +76,7 @@ const FAQSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://wa.me/5533999887766?text=Olá! Tenho algumas dúvidas sobre os produtos da AppleDroidGV."
+              href="https://wa.me/5533987094020?text=Olá! Tenho algumas dúvidas sobre os produtos da AppleDroidGV."
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-whatsapp text-whatsapp-foreground hover:bg-whatsapp-hover px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
@@ -84,7 +84,7 @@ const FAQSection = () => {
               Falar no WhatsApp
             </a>
             <a 
-              href="tel:+5533999887766"
+              href="tel:+5533987094020"
               className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground hover:bg-primary-hover px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
             >
               Ligar Agora

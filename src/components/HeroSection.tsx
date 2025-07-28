@@ -21,15 +21,15 @@ const HeroSection = () => {
       <div className="relative container mx-auto px-4 py-20 mt-16">
         <div className="max-w-4xl mx-auto text-center text-primary-foreground">
           {/* Main Title */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
             <span className="block text-primary-foreground">Seu dispositivo é essencial.</span>
-            <span className="block text-2xl md:text-3xl font-normal mt-2 text-primary-foreground/90">
+            <span className="block text-lg sm:text-2xl md:text-3xl font-normal mt-2 text-primary-foreground/90">
               Não o entregue a um curioso.
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl mb-8 text-primary-foreground/80 animate-fade-in">
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 text-primary-foreground/80 animate-fade-in px-4 sm:px-0">
             Confie em quem é especialista. Há 12 anos, a segurança que você procura no coração de Governador Valadares.
           </p>
 
@@ -58,7 +58,7 @@ const HeroSection = () => {
           </div>
 
           {/* Social Proof */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 animate-fade-in">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 animate-fade-in px-4 sm:px-0">
             <div className="flex items-center space-x-2">
               <Shield className="w-6 h-6 text-primary-foreground/80" />
               <span className="text-primary-foreground/80">
