@@ -7,7 +7,7 @@ const FinalCTASection = () => {
 
   const trustMetrics = [
     { value: "12", label: "Anos de experiência" },
-    { value: "5.000+", label: "Clientes satisfeitos" },
+    { value: "9.000+", label: "Clientes satisfeitos" },
     { value: "100%", label: "Produtos originais" }
   ];
 
