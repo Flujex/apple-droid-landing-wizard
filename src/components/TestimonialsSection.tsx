@@ -5,49 +5,49 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Maria S.",
+      name: "Juliana P.",
       location: "Centro, GV",
       rating: 5,
-      text: "Meu iPhone parou de funcionar no meio de uma reunião importante. Pensei que tinha perdido tudo. Na AppleDroidGV, fizeram um diagnóstico transparente e recuperaram todos os meus dados em 2 horas. Salvaram minha semana!",
-      purchase: "Diagnóstico e Reparo - iPhone 16 Pro Max"
+      text: "Pensei que tinha perdido as fotos do meu filho quando meu iPhone morreu. A equipe da AppleDroidGV não só recuperou tudo com um diagnóstico transparente, como me devolveu o aparelho no mesmo dia. A paz de espírito não tem preço.",
+      purchase: "Recuperação de Dados - iPhone 14 Pro"
     },
     {
       id: 2,
-      name: "João P.",
-      location: "Vila Bretas, GV",
+      name: "Carlos F.",
+      location: "Ilha dos Araújos, GV",
       rating: 5,
-      text: "Estava com medo de comprar um iPhone e não ter suporte. Aqui encontrei não só o produto original, mas um especialista que me ensinou tudo e sempre responde minhas dúvidas. Confiança total!",
-      purchase: "iPhone 15 Pro"
+      text: "Meu MacBook de trabalho parou no meio de um projeto importante. O diagnóstico deles foi preciso e o reparo rápido. Salvaram meu prazo e meu emprego! Profissionalismo exemplar.",
+      purchase: "MacBook Pro - Reparo de Placa"
     },
     {
       id: 3,
-      name: "Ana Carolina M.",
+      name: "Ana M.",
       location: "Lourdes, GV",
       rating: 5,
-      text: "Cansei de ser enganada em outras lojas. Aqui o preço é o que combinamos, sem pegadinhas. O trabalho é feito na minha frente e explica tudo. Finalmente encontrei quem entende do que fala.",
-      purchase: "iPhone 16 + Diagnóstico"
+      text: "Estava desesperada com meu iPhone que não carregava mais. Achei que precisaria trocar, mas eles identificaram que era só o conector. Economizei centenas de reais e aprendi a importância do diagnóstico correto.",
+      purchase: "iPhone 13 - Reparo de Conector"
     },
     {
       id: 4,
-      name: "Carlos E.",
-      location: "Caravelas, GV",
+      name: "Roberto S.",
+      location: "Vila Bretas, GV",
       rating: 5,
-      text: "Meu iPhone tinha um defeito estranho que ninguém conseguia resolver. Os especialistas da AppleDroidGV identificaram o problema em minutos e me deram a solução mais econômica. Profissionalismo de verdade!",
-      purchase: "iPhone 15 - Diagnóstico Técnico"
+      text: "Meu notebook estava lento há meses. Pensei que era coisa da idade, mas o diagnóstico mostrou que era só limpeza e otimização. Agora está voando! Atendimento nota 10.",
+      purchase: "Notebook Lenovo - Manutenção"
     }
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section id="depoimentos" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            O que nossos clientes dizem
+            A Experiência de Quem Já Confiou na Gente
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A confiança dos nossos clientes é nosso maior patrimônio. 
-            Veja o que eles falam sobre a AppleDroidGV.
+            Histórias reais de transformação. Veja como resolvemos problemas e devolvemos 
+            a tranquilidade para nossos clientes em Governador Valadares.
           </p>
         </div>
 

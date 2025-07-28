@@ -34,8 +34,9 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const navigationItems = [
-    { href: '#produtos', label: 'Produtos' },
-    { href: '#sobre', label: 'Sobre' },
+    { href: '#servicos', label: 'Serviços' },
+    { href: '#por-que-nos', label: 'Por que Nós?' },
+    { href: '#depoimentos', label: 'Depoimentos' },
     { href: '#contato', label: 'Contato' }
   ];
 
@@ -81,19 +82,19 @@ const Header = () => {
           {/* WhatsApp Button & Mobile Menu */}
           <div className="flex items-center space-x-4">
             <Button 
-              variant="whatsapp" 
+              variant="default" 
               size="lg"
               asChild
-              className="hidden sm:flex gap-2"
+              className="hidden sm:flex gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
             >
               <a 
                 href={links.general} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                aria-label="Falar no WhatsApp da AppleDroidGV"
+                aria-label="Falar com Especialista AppleDroidGV"
               >
                 <MessageCircle className="w-4 h-4" aria-hidden="true" />
-                WhatsApp
+                Falar com Especialista
               </a>
             </Button>
 
@@ -140,18 +141,18 @@ const Header = () => {
               </a>
             ))}
             <Button 
-              variant="whatsapp" 
-              className="w-full mt-4 gap-2"
+              variant="default" 
+              className="w-full mt-4 gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
               asChild
             >
               <a 
                 href={links.general} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                aria-label="Falar no WhatsApp da AppleDroidGV"
+                aria-label="Falar com Especialista AppleDroidGV"
               >
                 <MessageCircle className="w-4 h-4" aria-hidden="true" />
-                Falar no WhatsApp
+                Falar com Especialista
               </a>
             </Button>
           </nav>

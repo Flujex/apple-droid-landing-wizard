@@ -8,8 +8,16 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Como sei que as peças são de qualidade e não serei enganado?",
-      answer: "Entendemos sua preocupação. Trabalhamos apenas com peças originais Apple e fornecedores certificados. Fazemos o diagnóstico na sua frente, explicamos cada detalhe e o preço combinado é o que você paga. Nossa reputação de 12 anos é nossa maior garantia."
+      question: "Como sei que as peças são de qualidade?",
+      answer: "Trabalhamos com total transparência. Oferecemos diferentes linhas de peças de alta qualidade e explicamos os prós e contras de cada uma, para que VOCÊ decida o melhor custo-benefício para o seu caso."
+    },
+    {
+      question: "Meu problema parece complicado. Vai ficar muito caro?",
+      answer: "É por isso que nosso Diagnóstico de Performance é o primeiro passo e sem compromisso. Você saberá exatamente qual é o problema e o valor do investimento antes de aprovar qualquer serviço. Sem surpresas."
+    },
+    {
+      question: "Por que não levar em um lugar mais barato?",
+      answer: "Entendemos a busca por economia, mas um reparo mal feito pode custar o dobro (ou até o seu aparelho). Nosso preço reflete 12 anos de experiência, peças de confiança e uma garantia real. É um investimento na sua tranquilidade."
     },
     {
       question: "E se o problema for mais grave do que parece?",
@@ -20,16 +28,8 @@ const FAQSection = () => {
       answer: "Somos especialistas certificados há 12 anos. Nossa equipe passa por treinamento constante e temos as ferramentas originais Apple. Pode nos testar: traga sua dúvida mais complexa e veja a diferença da experiência."
     },
     {
-      question: "Qual a diferença de vocês para a concorrência?",
-      answer: "Simples: transparência total, diagnóstico sem taxa, preço justo combinado e 12 anos de reputação sólida. Não somos apenas uma loja, somos o estúdio de confiança da Galeria 616."
-    },
-    {
       question: "E se eu não ficar satisfeito com o serviço?",
       answer: "Nosso compromisso é com sua satisfação total. Se algo não estiver perfeito, voltamos à mesa e ajustamos até você ficar 100% satisfeito. Nosso relacionamento não termina quando você paga."
-    },
-    {
-      question: "Por que deveria confiar em vocês ao invés de ir direto na Apple?",
-      answer: "Oferecemos o mesmo padrão técnico com atendimento humano e local. Você nos conhece pessoalmente, tem acesso direto e resolve tudo sem burocracias. Somos a Apple com o carinho de Governador Valadares."
     }
   ];
 

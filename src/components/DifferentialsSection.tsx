@@ -10,53 +10,43 @@ interface Differential {
 const DifferentialsSection = () => {
   const differentials: Differential[] = [
     {
-      icon: Award,
-      title: "12 anos de maestria",
-      description: "Experiência que faz a diferença na hora que você mais precisa"
+      icon: Shield,
+      title: "Diagnóstico 100% Transparente",
+      description: "Sem 'taxa de análise' surpresa ou termos técnicos para te confundir. Mostramos o problema, explicamos a solução e o preço é o combinado. Simples assim."
     },
     {
-      icon: Shield,
-      title: "Diagnóstico 100% transparente",
-      description: "Chega de 'taxa de análise' e orçamentos obscuros. Você entende exatamente o que precisa ser feito"
+      icon: Award,
+      title: "Garantia de Verdade, Não de Papel",
+      description: "Nossa garantia cobre o serviço completo, não apenas a peça. Se o problema retornar, resolver é nossa prioridade, sem custos ou desculpas."
     },
     {
       icon: Heart,
-      title: "Entendemos a sua urgência",
-      description: "Sabemos que não é só um aparelho quebrado, é sua conexão com o mundo"
-    },
-    {
-      icon: CreditCard,
-      title: "Componente principal: confiança",
-      description: "Preço justo combinado, sem surpresas na conta final"
-    },
-    {
-      icon: MapPin,
-      title: "Estúdio na Galeria 616",
-      description: "Localização física que transmite segurança e facilita sua vida"
+      title: "Maestria de 12 Anos",
+      description: "Não somos curiosos. Somos um estúdio de reparos com mais de uma década de experiência. Isso significa menos risco para o seu aparelho e mais segurança para você."
     },
     {
       icon: Phone,
-      title: "Suporte que não te abandona",
-      description: "Nosso relacionamento não acaba quando você paga. Garantimos sua satisfação total"
+      title: "Suporte Local, Humano e Real",
+      description: "Precisa de ajuda? Você fala com a gente, aqui em GV. Sem robôs, sem espera infinita. Atendimento direto com quem resolve."
     }
   ];
 
   return (
-    <section id="sobre" className="section-padding bg-secondary">
+    <section id="por-que-nos" className="section-padding bg-secondary">
       <div className="container mx-auto container-spacing">
         {/* Section Header */}
         <header className="text-center mb-16">
           <h2 className="text-primary mb-4">
-            O Especialista de Confiança da Galeria
+            Nossa Garantia é a Sua Tranquilidade
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Entendemos suas dores e oferecemos a solução que você realmente precisa: 
-            transparência total, expertise certificada e a tranquilidade de estar em boas mãos.
+            Destruímos as principais objeções e medos que você tem ao escolher um serviço técnico. 
+            Aqui, sua confiança é nosso principal objetivo.
           </p>
         </header>
 
         {/* Differentials Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8" role="list">
           {differentials.map((differential, index) => (
             <Card 
               key={index} 

@@ -17,10 +17,10 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-1 text-primary-foreground/80" />
                 <div>
-                  <p className="font-medium">AppleDroidGV</p>
+                  <p className="font-medium">Estúdio AppleDroidGV</p>
                   <p className="text-primary-foreground/80 text-sm">
-                    Centro, Governador Valadares - MG<br />
-                    (Localização exata via WhatsApp)
+                    Galeria 616, Loja 612C<br />
+                    Centro, Governador Valadares - MG
                   </p>
                 </div>
               </div>

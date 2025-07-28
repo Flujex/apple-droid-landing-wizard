@@ -18,12 +18,12 @@ const FinalCTASection = () => {
           {/* Main CTA Text */}
           <header className="mb-12">
             <h2 className="text-primary-foreground mb-6">
-              Recupere sua tranquilidade digital agora
+              Chega de se Preocupar com Seu Dispositivo
             </h2>
             
             <p className="text-xl md:text-2xl text-primary-foreground/90">
-              Chega de estresse com tecnologia. Nossos especialistas estão prontos para 
-              devolver sua paz de espírito com a segurança e transparência que você merece.
+              Dê o primeiro passo para ter sua tranquilidade e produtividade de volta. 
+              Fale com um de nossos especialistas agora mesmo.
             </p>
           </header>
 
@@ -42,7 +42,7 @@ const FinalCTASection = () => {
                 aria-label="Chamar no WhatsApp da AppleDroidGV para comprar iPhone"
               >
                 <MessageCircle className="w-6 h-6" aria-hidden="true" />
-                Recuperar Minha Tranquilidade
+                Resolver Meu Problema de Uma Vez
               </a>
             </Button>
             

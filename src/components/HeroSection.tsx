@@ -1,10 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { Star, Users, Shield } from 'lucide-react';
+import { useWhatsApp } from '@/hooks/useWhatsApp';
 import heroStore from '@/assets/hero-store.jpg';
 
 const HeroSection = () => {
-  const whatsappChooseIphone = "https://wa.me/5533999887766?text=Olá! Quero escolher meu iPhone na AppleDroidGV. Podem me ajudar?";
-  const whatsappGeneral = "https://wa.me/5533999887766?text=Olá! Vi o site da AppleDroidGV e gostaria de mais informações.";
+  const { links } = useWhatsApp();
 
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
@@ -41,8 +41,8 @@ const HeroSection = () => {
               asChild
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
             >
-              <a href={whatsappChooseIphone} target="_blank" rel="noopener noreferrer">
-                Agendar Diagnóstico Sem Custo
+              <a href={links.general} target="_blank" rel="noopener noreferrer">
+                Agendar Diagnóstico Gratuito
               </a>
             </Button>
             <Button 
@@ -51,8 +51,8 @@ const HeroSection = () => {
               asChild
               className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
             >
-              <a href={whatsappGeneral} target="_blank" rel="noopener noreferrer">
-                Falar no WhatsApp
+              <a href="#servicos">
+                Ver Nossos Serviços
               </a>
             </Button>
           </div>
