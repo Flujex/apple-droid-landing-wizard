@@ -14,6 +14,8 @@ interface Product {
   price: string;
   image: string;
   whatsappMessage: string;
+  badge?: string;
+  badgeColor?: string;
 }
 
 const ProductSection = () => {
@@ -27,7 +29,9 @@ const ProductSection = () => {
       description: "Câmera profissional, chip A18 Pro, bateria para o dia todo",
       price: "A partir de R$ 8.299",
       image: iphone16ProMax,
-      whatsappMessage: "Olá! Tenho interesse no iPhone 16 Pro Max 256GB que vi no site. Podem me passar mais informações?"
+      whatsappMessage: "Olá! Tenho interesse no iPhone 16 Pro Max 256GB que vi no site. Podem me passar mais informações?",
+      badge: "🔥 MAIS PROCURADO",
+      badgeColor: "bg-red-500"
     },
     {
       id: 2,
@@ -36,7 +40,9 @@ const ProductSection = () => {
       description: "Performance excepcional, design premium em titânio",
       price: "A partir de R$ 6.999",
       image: iphone16Pro,
-      whatsappMessage: "Olá! Gostaria de saber mais sobre o iPhone 16 Pro 128GB. Qual o melhor preço?"
+      whatsappMessage: "Olá! Gostaria de saber mais sobre o iPhone 16 Pro 128GB. Qual o melhor preço?",
+      badge: "💎 MELHOR CUSTO-BENEFÍCIO",
+      badgeColor: "bg-accent"
     },
     {
       id: 3,
@@ -45,7 +51,9 @@ const ProductSection = () => {
       description: "Novo design, câmera avançada, cores vibrantes",
       price: "A partir de R$ 5.499",
       image: iphone16,
-      whatsappMessage: "Olá! Quero mais informações sobre o iPhone 16 128GB. Vocês têm na cor rosa?"
+      whatsappMessage: "Olá! Quero mais informações sobre o iPhone 16 128GB. Vocês têm na cor rosa?",
+      badge: "⚡ ÚLTIMAS UNIDADES",
+      badgeColor: "bg-orange-500"
     }
   ];
 
@@ -68,10 +76,17 @@ const ProductSection = () => {
           {products.map((product) => (
             <Card 
               key={product.id} 
-              className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-gradient-card"
+              className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-gradient-card relative"
               role="listitem"
             >
               <CardContent className="p-6">
+                {/* Product Badge */}
+                {product.badge && (
+                  <div className={`absolute top-3 left-3 z-10 px-2 py-1 rounded-full text-xs font-bold text-white ${product.badgeColor} shadow-lg`}>
+                    {product.badge}
+                  </div>
+                )}
+
                 {/* Product Image */}
                 <div className="relative mb-6 overflow-hidden rounded-xl">
                   <img 

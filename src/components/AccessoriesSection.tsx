@@ -57,12 +57,19 @@ const AccessoriesSection = () => {
         {/* Section Header */}
         <header className="text-center mb-16">
           <h2 className="text-primary mb-4">
-            Acessórios de Performance
+            Antes de Sair da Loja: <br className="hidden sm:block" />
+            <span className="text-accent">Não Cometa o Erro Nº1</span> dos Novos Utilizadores
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Maximize o potencial dos seus dispositivos com acessórios que nossos especialistas recomendam. 
-            Cada produto é testado e aprovado para garantir performance e durabilidade excepcionais.
-          </p>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-foreground mb-4 font-medium">
+              O erro mais caro que um novo dono de iPhone comete? Acreditar que a proteção é um "extra". 
+              <span className="text-accent font-bold"> Não é. É a parte mais crucial do seu investimento.</span>
+            </p>
+            <p className="text-base text-muted-foreground">
+              Pergunte a qualquer um dos nossos especialistas qual o Kit de Partida Essencial para o seu novo aparelho. 
+              <span className="font-semibold text-primary">Proteger hoje custa uma fração do reparo de amanhã.</span>
+            </p>
+          </div>
         </header>
 
         {/* Accessories Grid */}
